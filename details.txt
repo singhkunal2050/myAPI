@@ -9,6 +9,7 @@
 	--database name 
 	-- lps
 
+ create a db called lps and then import the database from lps.sql
 
 // demo json for posting
 
