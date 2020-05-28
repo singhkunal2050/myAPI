@@ -1,0 +1,10 @@
+
+	-- "CustomerName": this.CustomerName,
+	-- "Village": this.village,
+	-- "Taluka": this.taluka,
+	-- "District": this.district,
+	-- "MobileNumber":this.mobile,
+	-- "AdharNumber":this.adharnumber
+
+	--database name 
+	-- lps

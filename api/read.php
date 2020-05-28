@@ -26,7 +26,7 @@
       extract($row);
       // due to extract we dont have to call $row[id] and so on
 
-      $user = array(
+      $user1 = array(
         'id' => $id,
         'uname' => $uname,
         'village' => $village,
@@ -37,7 +37,7 @@
       );
 
       // Push to "data"
-      array_push($users_arr, $user);
+      array_push($users_arr, $user1);
       // array_push($posts_arr['data'], $post_item);
     }
 
