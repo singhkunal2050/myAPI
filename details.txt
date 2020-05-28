@@ -8,3 +8,8 @@
 
 	--database name 
 	-- lps
+
+
+// demo json for posting
+
+{"uname":"mayur patil","village":"shirur","taluka":"Haveli","district":"Aurangabad","phoneno":"4544646466","adhaarno":"770526656453"}

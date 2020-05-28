@@ -36,14 +36,10 @@ class User{
 	
 	public function create() {
 		// Create query
-		// $query = "INSERT INTO  '$this->table' ('uname' , 'village' , 'taluka' , 'district' , 'phoneno' , 'adhaarno' )  VALUES( 
-			//  '$this->uname' , '$this->village' , '$this->taluka' , '$this->district' , $this->phoneno , $this->adhaarno "; 
-		
-			$query = " INSERT INTO `user` (`uname`, `village`, `taluka`, `district`, `phoneno`, `adhaarno`)
-			 VALUES ('$this->uname' , '$this->village' , '$this->taluka' , '$this->district' , $this->phoneno , $this->adhaarno)";
+		$query = " INSERT INTO `user` (`uname`, `village`, `taluka`, `district`, `phoneno`, `adhaarno`)
+			VALUES ('$this->uname' , '$this->village' , '$this->taluka' , '$this->district' , $this->phoneno , $this->adhaarno)";
 
-
-		echo $query;
+		// echo $query;
 		$result = $this->conn->query($query);
 			
 		// Execute query
