@@ -1,5 +1,6 @@
 <?php 
   // Headers
+
   header('Access-Control-Allow-Origin: *');
   header('Content-Type: application/json');
   header('Access-Control-Allow-Methods: POST');
@@ -16,9 +17,10 @@
   $user = new User($db);
 
   // Get raw posted data
-  $data = json_decode(file_get_contents("php://input"));
+  $data =  json_decode(file_get_contents("php://input"));
+  print_r($data);
 
-  
+
   // $user->id= $data->id;                // id is auto generated
   $user->uname = $data->uname;
   $user->village = $data->village;
