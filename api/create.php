@@ -18,8 +18,7 @@
 
   // Get raw posted data
   $data =  json_decode(file_get_contents("php://input"));
-  print_r($data);
-
+  // print_r($data);
 
   // $user->id= $data->id;                // id is auto generated
   $user->uname = $data->uname;
