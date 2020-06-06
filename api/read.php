@@ -33,7 +33,13 @@
         'taluka' => $taluka,
         'district' => $district,
         'phoneno' => $phoneno,
-        'adhaarno' => $adhaarno
+        'adhaarno' => $adhaarno,
+        'length' => $length,
+        'breadth' => $breadth,
+        'rate' => $rate,
+        'totalarea' => $totalarea,
+        'totalamount' => $totalamount,
+        'invoiceid' => $invoiceid,
       );
 
       // Push to "data"

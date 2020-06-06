@@ -25,11 +25,15 @@
         'taluka' => $user->taluka,
         'district' => $user->district,
         'phoneno' => $user->phoneno,
-        'adhaarno' => $user->adhaarno
+        'adhaarno' => $user->adhaarno,
+        'length' => $user->length,
+        'breadth' => $user->breadth,
+        'rate' => $user->rate,
+        'totalarea' => $user->totalarea,
+        'totalamount' => $user->totalamount,
+        'invoiceid'=> $user->invoiceid
       );
 
    echo json_encode($user1);
-
-
 
   ?>

@@ -27,7 +27,12 @@
   $user->district = $data->district;
   $user->phoneno = $data->phoneno;
   $user->adhaarno = $data->adhaarno;
-
+  $user->length = $data->length;
+  $user->breadth = $data->breadth;
+  $user->rate = $data->rate;
+  $user->totalarea = $data->totalarea;
+  $user->totalamount = $data->totalamount;
+  $user->invoiceid = $data->invoiceid;
 
   // Create post
   if($user->create()) {

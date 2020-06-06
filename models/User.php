@@ -4,7 +4,7 @@ class User{
 	private $conn;
 	private $table = 'user';
 	
-	public $id, $uname , $village ,$taluka ,$district, $phoneno ,$adhaarno;
+	public $id, $uname , $village ,$taluka ,$district, $phoneno ,$adhaarno ,$length ,$breadth ,$rate ,$totalarea ,$totalamount ,$invoiceid;
 	
 	public function __construct($db){
 		$this->conn = $db;
@@ -32,12 +32,18 @@ class User{
 		$this->district = $row[4];
 		$this->phoneno = $row[5];
 		$this->adhaarno = $row[6];
+		$this->length = $row[7];
+		$this->breadth = $row[8];
+		$this->rate = $row[9];
+		$this->totalarea = $row[10];
+		$this->totalamount = $row[11];
+		$this->invoiceid= $row[12];
 	}
 	
 	public function create() {
 		// Create query
-		$query = " INSERT INTO `user` (`uname`, `village`, `taluka`, `district`, `phoneno`, `adhaarno`)
-			VALUES ('$this->uname' , '$this->village' , '$this->taluka' , '$this->district' , $this->phoneno , $this->adhaarno)";
+		$query = " INSERT INTO `user` (`uname`, `village`, `taluka`, `district`, `phoneno`, `adhaarno`,`length`, `breadth`, `rate`, `totalarea`, `totalamount`, `invoiceid`)
+			VALUES ('$this->uname' , '$this->village' , '$this->taluka' , '$this->district' , $this->phoneno , $this->adhaarno , $this->length , $this->breadth , $this->rate , $this->totalarea , $this->totalamount , $this->invoiceid) ";
 
 		// echo $query;
 		$result = $this->conn->query($query);

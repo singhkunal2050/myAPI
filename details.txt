@@ -14,3 +14,8 @@
 // demo json for posting
 
 {"uname":"mayur patil","village":"shirur","taluka":"Haveli","district":"Aurangabad","phoneno":"4544646466","adhaarno":"770526656453"}
+
+
+// added 6 new cols 
+
+{"uname":"latest build","village":"shirur","taluka":"Haveli","district":"Aurangabad","phoneno":"4544646466","adhaarno":"770526656453","length":3,"breadth":7,"rate":441,"totalarea":311,"totalamount":34,"invoiceid":123 }
